@@ -3,7 +3,7 @@ name: setting up environment
 on: [push]
     
 env:
- username: sirpk0
+ username: pbinsizlub
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -52,7 +52,7 @@ jobs:
        - name: Loop workflow
          continue-on-error: true
          run: |
-              git clone https://github.com/$username/mub loop
+              git clone https://github.com/$username/techrun loop
               cd loop
               echo "1" >> loop.txt
               git add loop.txt
